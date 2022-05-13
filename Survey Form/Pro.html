@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pro2.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="title">
+        <h1>Training Survey Form</h1>
+    </div>
+    <div>
+        <p id="description"><em>Thank you for taking the time to fill this form</em></p>
+        <form id="survey-form" >
+
+            <label for="name" id="name-label">Name : </label><br>
+            <input type="text" id="name" placeholder="Enter your name" required><br>
+            <br>
+
+            <label for="email" id="email-label">Email : </label><br>
+            <input type="email" id="email" placeholder="Enter email e.g. xyz@gmail.com   " name="email"
+                pattern="[a-z A-Z 0-9]+@gmail.com" required><br>
+            <br>
+
+            <label for="number" id="number-label">Number : </label><br>
+            <input type="tel" id="number" pattern="[0-9]{3}-[0-9]{7}" placeholder="Enter your number" max="10" min="10"
+                required><br>
+            <br>
+            <p>Choose your gender : </p>
+            <select name="dropdown" id="dropdown">
+                <option value="radio" type="radio">Male </option>
+                <option value="radio" type="radio">Female</option>
+                <option value="radio" type="radio">Others</option>
+            </select><br><br>
+
+            <p>Which languages do you prefer the most : </p>
+            <br>
+            <input type="checkbox">
+            <label for="name">C++ </label><br>
+
+            <input type="checkbox">
+            <label for="name">python </label><br>
+
+            <input type="checkbox">
+            <label for="name">Java </label><br>
+
+            <input type="checkbox">
+            <label for="name">PHP </label><br>
+
+            <input type="checkbox">
+            <label for="name"> R </label><br>
+
+            <input type="checkbox">
+            <label for="name"> HTML, Css, Js </label><br>
+            
+            
+            <p>Would you like your cousins to choose computer field</p>
+            <input type="radio"><label for="value">Yes</label><br>
+            <input type="radio"><label for="value">No</label><br>
+            <input type="radio"><label for="value">Will think about it</label><br>
+            <input type="radio"><label for="value">It's her choise.</label><br><br>
+            <p>Please enter your feedback</p>
+            <textarea cols="70" rows="10"  placeholder="Enter your comment here"></textarea>
+            <br><br>
+            <input type="submit" id="submit"><br><br>
+            
+        </form>
+    </div>
+
+</body>
+
+</html>
